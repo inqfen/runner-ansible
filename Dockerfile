@@ -20,7 +20,7 @@ RUN apk update &&\
     mv -f terraform /usr/bin/terraform &&\
 # Install python packages
     pip3 install -U pip &&\
-    pip3 install ansible==2.8.4 openshift pycrypto docker psycopg2 boto3 &&\
+    pip3 install ansible==2.8.4 openshift pycrypto docker psycopg2 boto3 mitogen==0.2.8 &&\
 # Remove unusable stuff
     apk del build-dependencies &&\
     rm -rf /var/cache/apk/* &&\
