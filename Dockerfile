@@ -13,7 +13,7 @@ RUN apk update &&\
     postgresql-client libpq \
     openssl-dev &&\
 # Install packages
-    apk add git curl python3 openssh-client sshpass &&\
+    apk add git curl python3 openssh-client sshpass aws-cli &&\
 # Install terraform
     wget https://releases.hashicorp.com/terraform/0.12.7/terraform_0.12.7_linux_amd64.zip &&\
     unzip terraform_0.12.7_linux_amd64.zip &&\
