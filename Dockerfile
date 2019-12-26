@@ -15,8 +15,8 @@ RUN apk update &&\
 # Install packages
     apk add git curl python3 openssh-client sshpass &&\
 # Install terraform
-    wget https://releases.hashicorp.com/terraform/0.12.14/terraform_0.12.14_linux_amd64.zip &&\
-    unzip terraform_0.12.14_linux_amd64.zip &&\
+    wget https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip &&\
+    unzip terraform_0.12.18_linux_amd64.zip &&\
     mv -f terraform /usr/bin/terraform &&\
 # Install python packages
     pip3 install -U pip &&\
