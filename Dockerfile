@@ -18,7 +18,7 @@ RUN apk update &&\
     wget https://releases.hashicorp.com/terraform/0.12.19/terraform_0.12.19_linux_amd64.zip &&\
     unzip terraform_0.12.19_linux_amd64.zip &&\
     mv -f terraform /usr/bin/terraform &&\
-    rm terraform_0.12.18_linux_amd64.zip &&\
+    rm terraform_0.12.19_linux_amd64.zip &&\
 # Install python packages
     pip3 install -U pip &&\
     pip3 install ansible==2.8.4 openshift pycrypto docker psycopg2 boto3 pymongo awscli mitogen==0.2.8 &&\
