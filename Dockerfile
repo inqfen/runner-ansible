@@ -13,7 +13,7 @@ RUN apk update &&\
     postgresql-client libpq \
     openssl-dev &&\
 # Install packages
-    apk add git mongodb-tools curl python3 openssh-client sshpass &&\
+    apk add git mongodb-tools mongodb curl python3 openssh-client sshpass &&\
 # Install terraform
     wget https://releases.hashicorp.com/terraform/0.12.19/terraform_0.12.19_linux_amd64.zip &&\
     unzip terraform_0.12.19_linux_amd64.zip &&\
